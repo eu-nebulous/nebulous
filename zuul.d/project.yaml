@@ -1,0 +1,11 @@
+- project:
+    check:
+      jobs:
+        - opendev-buildset-registry
+        # - nebulous-platform-apply-helm-charts
+        - nox-linters
+    gate:
+      jobs:
+        - opendev-buildset-registry
+        # - nebulous-platform-apply-helm-charts
+        - nox-linters

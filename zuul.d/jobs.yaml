@@ -1,0 +1,14 @@
+- job:
+    name: nebulous-platform-apply-helm-charts
+    parent: nebulous-apply-helm-charts
+    dependencies:
+      - name: opendev-buildset-registry
+        soft: false
+    required-projects:
+      - nebulous/iot-dpp-orchestrator
+    requires:
+      - nebulous-iot-dpp-orchestrator-container-images
+    description: Deploy a Kubernetes cluster and apply charts.
+    vars:
+      helm_charts:
+        nebulous-iot-dpp-orchestrator: ../iot-dpp-orchestrator/charts/nebulous-iot-dpp-orchestrator
