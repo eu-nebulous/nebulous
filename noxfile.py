@@ -9,6 +9,7 @@ YAML_PATHS = [
 
 PYTHON_PATHS = [
     "./noxfile.py",
+    "./tools/",
 ]
 
 
