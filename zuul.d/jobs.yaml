@@ -6,9 +6,21 @@
         soft: false
     required-projects:
       - nebulous/iot-dpp-orchestrator
+      - nebulous/optimiser-constraint-checker
+      - nebulous/optimiser-controller
+      - nebulous/optimiser-resource-auction-agent
+      - nebulous/optimiser-solver
     requires:
       - nebulous-iot-dpp-orchestrator-container-images
+      - nebulous-optimiser-constraint-checker-container-images
+      - nebulous-optimiser-controller-container-images
+      - nebulous-optimiser-resource-auction-agent-container-container-images
+      - nebulous-optimiser-solver-container-images
     description: Deploy a Kubernetes cluster and apply charts.
     vars:
       helm_charts:
         nebulous-iot-dpp-orchestrator: ../iot-dpp-orchestrator/charts/nebulous-iot-dpp-orchestrator
+        nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
+        nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
+        nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
+        nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
