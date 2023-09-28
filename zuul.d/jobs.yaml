@@ -12,6 +12,7 @@
       - nebulous/optimiser-resource-auction-agent
       - nebulous/optimiser-solver
       - nebulous/optimiser-utility-evaluator
+      - nebulous/slo-violation-detector
     requires:
       - nebulous-activemq-container-images
       - nebulous-iot-dpp-orchestrator-container-images
@@ -20,6 +21,7 @@
       - nebulous-optimiser-resource-auction-agent-container-container-images
       - nebulous-optimiser-solver-container-images
       - nebulous-optimiser-utility-evaluator-container-images
+      - nebulous-slo-violation-detector-container-images
     description: Deploy a Kubernetes cluster and apply charts.
     vars:
       helm_charts:
@@ -30,3 +32,4 @@
         nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
         nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
         nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
+        nebulous-slo-violation-detector: ../slo-violation-detector/charts/nebulous-slo-violation-detector
