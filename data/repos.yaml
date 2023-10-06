@@ -1,0 +1,8 @@
+- nebulous/activemq
+- nebulous/iot-dpp-orchestrator
+- nebulous/optimiser-constraint-checker
+- nebulous/optimiser-controller
+- nebulous/optimiser-resource-auction-agent
+- nebulous/optimiser-solver
+- nebulous/optimiser-utility-evaluator
+- nebulous/slo-violation-detector

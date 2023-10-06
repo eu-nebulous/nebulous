@@ -4,6 +4,38 @@
     dependencies:
       - name: opendev-buildset-registry
         soft: false
+      - name: nebulous-activemq-build-container-images
+        soft: true
+      - name: nebulous-activemq-upload-container-images
+        soft: true
+      - name: nebulous-iot-dpp-orchestrator-build-container-images
+        soft: true
+      - name: nebulous-iot-dpp-orchestrator-upload-container-images
+        soft: true
+      - name: nebulous-optimiser-constraint-checker-build-container-images
+        soft: true
+      - name: nebulous-optimiser-constraint-checker-upload-container-images
+        soft: true
+      - name: nebulous-optimiser-controller-build-container-images
+        soft: true
+      - name: nebulous-optimiser-controller-upload-container-images
+        soft: true
+      - name: nebulous-optimiser-resource-auction-agent-build-container-images
+        soft: true
+      - name: nebulous-optimiser-resource-auction-agent-upload-container-images
+        soft: true
+      - name: nebulous-optimiser-solver-build-container-images
+        soft: true
+      - name: nebulous-optimiser-solver-upload-container-images
+        soft: true
+      - name: nebulous-optimiser-utility-evaluator-build-container-images
+        soft: true
+      - name: nebulous-optimiser-utility-evaluator-upload-container-images
+        soft: true
+      - name: nebulous-slo-violation-detector-build-container-images
+        soft: true
+      - name: nebulous-slo-violation-detector-upload-container-images
+        soft: true
     required-projects:
       - nebulous/activemq
       - nebulous/iot-dpp-orchestrator
@@ -18,7 +50,7 @@
       - nebulous-iot-dpp-orchestrator-container-images
       - nebulous-optimiser-constraint-checker-container-images
       - nebulous-optimiser-controller-container-images
-      - nebulous-optimiser-resource-auction-agent-container-container-images
+      - nebulous-optimiser-resource-auction-agent-container-images
       - nebulous-optimiser-solver-container-images
       - nebulous-optimiser-utility-evaluator-container-images
       - nebulous-slo-violation-detector-container-images
