@@ -1,5 +1,6 @@
 - nebulous/activemq
 - nebulous/gui
+- nebulous/influxdb
 - nebulous/iot-dpp-orchestrator
 - nebulous/optimiser-constraint-checker
 - nebulous/optimiser-controller

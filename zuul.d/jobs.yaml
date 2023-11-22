@@ -12,6 +12,10 @@
         soft: true
       - name: nebulous-gui-upload-container-images
         soft: true
+      - name: nebulous-influxdb-build-container-images
+        soft: true
+      - name: nebulous-influxdb-upload-container-images
+        soft: true
       - name: nebulous-iot-dpp-orchestrator-build-container-images
         soft: true
       - name: nebulous-iot-dpp-orchestrator-upload-container-images
@@ -47,6 +51,7 @@
     required-projects:
       - nebulous/activemq
       - nebulous/gui
+      - nebulous/influxdb
       - nebulous/iot-dpp-orchestrator
       - nebulous/optimiser-constraint-checker
       - nebulous/optimiser-controller
@@ -58,6 +63,7 @@
     requires:
       - nebulous-activemq-container-images
       - nebulous-gui-container-images
+      - nebulous-influxdb-container-images
       - nebulous-iot-dpp-orchestrator-container-images
       - nebulous-optimiser-constraint-checker-container-images
       - nebulous-optimiser-controller-container-images
@@ -71,6 +77,7 @@
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
         nebulous-gui: ../gui/charts/nebulous-gui
+        nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
         nebulous-iot-dpp-orchestrator: ../iot-dpp-orchestrator/charts/nebulous-iot-dpp-orchestrator
         nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
