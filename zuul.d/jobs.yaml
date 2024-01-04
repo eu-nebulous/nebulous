@@ -8,6 +8,10 @@
         soft: true
       - name: nebulous-activemq-upload-container-images
         soft: true
+      - name: nebulous-exponential-smoothing-predictor-build-container-images
+        soft: true
+      - name: nebulous-exponential-smoothing-predictor-upload-container-images
+        soft: true
       - name: nebulous-gui-build-container-images
         soft: true
       - name: nebulous-gui-upload-container-images
@@ -19,6 +23,10 @@
       - name: nebulous-iot-dpp-orchestrator-build-container-images
         soft: true
       - name: nebulous-iot-dpp-orchestrator-upload-container-images
+        soft: true
+      - name: nebulous-monitoring-data-persistor-build-container-images
+        soft: true
+      - name: nebulous-monitoring-data-persistor-upload-container-images
         soft: true
       - name: nebulous-optimiser-constraint-checker-build-container-images
         soft: true
@@ -40,9 +48,17 @@
         soft: true
       - name: nebulous-optimiser-utility-evaluator-upload-container-images
         soft: true
+      - name: nebulous-overlay-network-manager-build-container-images
+        soft: true
+      - name: nebulous-overlay-network-manager-upload-container-images
+        soft: true
       - name: nebulous-resource-manager-build-container-images
         soft: true
       - name: nebulous-resource-manager-upload-container-images
+        soft: true
+      - name: nebulous-security-manager-build-container-images
+        soft: true
+      - name: nebulous-security-manager-upload-container-images
         soft: true
       - name: nebulous-slo-violation-detector-build-container-images
         soft: true
@@ -50,39 +66,51 @@
         soft: true
     required-projects:
       - nebulous/activemq
+      - nebulous/exponential-smoothing-predictor
       - nebulous/gui
       - nebulous/influxdb
       - nebulous/iot-dpp-orchestrator
+      - nebulous/monitoring-data-persistor
       - nebulous/optimiser-constraint-checker
       - nebulous/optimiser-controller
       - nebulous/optimiser-resource-auction-agent
       - nebulous/optimiser-solver
       - nebulous/optimiser-utility-evaluator
+      - nebulous/overlay-network-manager
       - nebulous/resource-manager
+      - nebulous/security-manager
       - nebulous/slo-violation-detector
     requires:
       - nebulous-activemq-container-images
+      - nebulous-exponential-smoothing-predictor-container-images
       - nebulous-gui-container-images
       - nebulous-influxdb-container-images
       - nebulous-iot-dpp-orchestrator-container-images
+      - nebulous-monitoring-data-persistor-container-images
       - nebulous-optimiser-constraint-checker-container-images
       - nebulous-optimiser-controller-container-images
       - nebulous-optimiser-resource-auction-agent-container-images
       - nebulous-optimiser-solver-container-images
       - nebulous-optimiser-utility-evaluator-container-images
+      - nebulous-overlay-network-manager-container-images
       - nebulous-resource-manager-container-images
+      - nebulous-security-manager-container-images
       - nebulous-slo-violation-detector-container-images
     description: Deploy a Kubernetes cluster and apply charts.
     vars:
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
+        nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
         nebulous-iot-dpp-orchestrator: ../iot-dpp-orchestrator/charts/nebulous-iot-dpp-orchestrator
+        nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
         nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
         nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
         nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
         nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
+        nebulous-overlay-network-manager: ../overlay-network-manager/charts/nebulous-overlay-network-manager
         nebulous-resource-manager: ../resource-manager/charts/nebulous-resource-manager
+        nebulous-security-manager: ../security-manager/charts/nebulous-security-manager
         nebulous-slo-violation-detector: ../slo-violation-detector/charts/nebulous-slo-violation-detector
