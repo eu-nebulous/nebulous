@@ -8,6 +8,10 @@
         soft: true
       - name: nebulous-activemq-upload-container-images
         soft: true
+      - name: nebulous-cloud-fog-service-broker-build-container-images
+        soft: true
+      - name: nebulous-cloud-fog-service-broker-upload-container-images
+        soft: true
       - name: nebulous-exponential-smoothing-predictor-build-container-images
         soft: true
       - name: nebulous-exponential-smoothing-predictor-upload-container-images
@@ -66,6 +70,7 @@
         soft: true
     required-projects:
       - nebulous/activemq
+      - nebulous/cloud-fog-service-broker
       - nebulous/exponential-smoothing-predictor
       - nebulous/gui
       - nebulous/influxdb
@@ -82,6 +87,7 @@
       - nebulous/slo-violation-detector
     requires:
       - nebulous-activemq-container-images
+      - nebulous-cloud-fog-service-broker-container-images
       - nebulous-exponential-smoothing-predictor-container-images
       - nebulous-gui-container-images
       - nebulous-influxdb-container-images
@@ -100,6 +106,7 @@
     vars:
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
+        nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
         nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb

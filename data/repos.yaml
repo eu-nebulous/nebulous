@@ -1,4 +1,5 @@
 - nebulous/activemq
+- nebulous/cloud-fog-service-broker
 - nebulous/exponential-smoothing-predictor
 - nebulous/gui
 - nebulous/influxdb
