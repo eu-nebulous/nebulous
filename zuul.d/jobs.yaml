@@ -24,10 +24,6 @@
         soft: true
       - name: nebulous-influxdb-upload-container-images
         soft: true
-      - name: nebulous-iot-dpp-orchestrator-build-container-images
-        soft: true
-      - name: nebulous-iot-dpp-orchestrator-upload-container-images
-        soft: true
       - name: nebulous-monitoring-data-persistor-build-container-images
         soft: true
       - name: nebulous-monitoring-data-persistor-upload-container-images
@@ -74,7 +70,6 @@
       - nebulous/exponential-smoothing-predictor
       - nebulous/gui
       - nebulous/influxdb
-      - nebulous/iot-dpp-orchestrator
       - nebulous/monitoring-data-persistor
       - nebulous/optimiser-constraint-checker
       - nebulous/optimiser-controller
@@ -91,7 +86,6 @@
       - nebulous-exponential-smoothing-predictor-container-images
       - nebulous-gui-container-images
       - nebulous-influxdb-container-images
-      - nebulous-iot-dpp-orchestrator-container-images
       - nebulous-monitoring-data-persistor-container-images
       - nebulous-optimiser-constraint-checker-container-images
       - nebulous-optimiser-controller-container-images
@@ -110,7 +104,6 @@
         nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
-        nebulous-iot-dpp-orchestrator: ../iot-dpp-orchestrator/charts/nebulous-iot-dpp-orchestrator
         nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
         nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
