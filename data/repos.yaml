@@ -2,7 +2,6 @@
 - nebulous/exponential-smoothing-predictor
 - nebulous/gui
 - nebulous/influxdb
-- nebulous/iot-dpp-orchestrator
 - nebulous/monitoring-data-persistor
 - nebulous/optimiser-constraint-checker
 - nebulous/optimiser-controller
