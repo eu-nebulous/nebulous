@@ -1,7 +1,9 @@
 - nebulous/activemq
 - nebulous/cloud-fog-service-broker
+- nebulous/exn-middleware
 - nebulous/exponential-smoothing-predictor
 - nebulous/gui
+- nebulous/gui-controller
 - nebulous/influxdb
 - nebulous/monitoring-data-persistor
 - nebulous/optimiser-constraint-checker
@@ -9,7 +11,9 @@
 - nebulous/optimiser-resource-auction-agent
 - nebulous/optimiser-solver
 - nebulous/optimiser-utility-evaluator
+- nebulous/overlay-network-agent
 - nebulous/overlay-network-manager
+- nebulous/prediction-orchestrator
 - nebulous/resource-manager
 - nebulous/security-manager
 - nebulous/slo-violation-detector

@@ -12,6 +12,10 @@
         soft: true
       - name: nebulous-cloud-fog-service-broker-upload-container-images
         soft: true
+      - name: nebulous-exn-middleware-build-container-images
+        soft: true
+      - name: nebulous-exn-middleware-upload-container-images
+        soft: true
       - name: nebulous-exponential-smoothing-predictor-build-container-images
         soft: true
       - name: nebulous-exponential-smoothing-predictor-upload-container-images
@@ -19,6 +23,10 @@
       - name: nebulous-gui-build-container-images
         soft: true
       - name: nebulous-gui-upload-container-images
+        soft: true
+      - name: nebulous-gui-controller-build-container-images
+        soft: true
+      - name: nebulous-gui-controller-upload-container-images
         soft: true
       - name: nebulous-influxdb-build-container-images
         soft: true
@@ -48,9 +56,17 @@
         soft: true
       - name: nebulous-optimiser-utility-evaluator-upload-container-images
         soft: true
+      - name: nebulous-overlay-network-agent-build-container-images
+        soft: true
+      - name: nebulous-overlay-network-agent-upload-container-images
+        soft: true
       - name: nebulous-overlay-network-manager-build-container-images
         soft: true
       - name: nebulous-overlay-network-manager-upload-container-images
+        soft: true
+      - name: nebulous-prediction-orchestrator-build-container-images
+        soft: true
+      - name: nebulous-prediction-orchestrator-upload-container-images
         soft: true
       - name: nebulous-resource-manager-build-container-images
         soft: true
@@ -67,8 +83,10 @@
     required-projects:
       - nebulous/activemq
       - nebulous/cloud-fog-service-broker
+      - nebulous/exn-middleware
       - nebulous/exponential-smoothing-predictor
       - nebulous/gui
+      - nebulous/gui-controller
       - nebulous/influxdb
       - nebulous/monitoring-data-persistor
       - nebulous/optimiser-constraint-checker
@@ -76,15 +94,19 @@
       - nebulous/optimiser-resource-auction-agent
       - nebulous/optimiser-solver
       - nebulous/optimiser-utility-evaluator
+      - nebulous/overlay-network-agent
       - nebulous/overlay-network-manager
+      - nebulous/prediction-orchestrator
       - nebulous/resource-manager
       - nebulous/security-manager
       - nebulous/slo-violation-detector
     requires:
       - nebulous-activemq-container-images
       - nebulous-cloud-fog-service-broker-container-images
+      - nebulous-exn-middleware-container-images
       - nebulous-exponential-smoothing-predictor-container-images
       - nebulous-gui-container-images
+      - nebulous-gui-controller-container-images
       - nebulous-influxdb-container-images
       - nebulous-monitoring-data-persistor-container-images
       - nebulous-optimiser-constraint-checker-container-images
@@ -92,7 +114,9 @@
       - nebulous-optimiser-resource-auction-agent-container-images
       - nebulous-optimiser-solver-container-images
       - nebulous-optimiser-utility-evaluator-container-images
+      - nebulous-overlay-network-agent-container-images
       - nebulous-overlay-network-manager-container-images
+      - nebulous-prediction-orchestrator-container-images
       - nebulous-resource-manager-container-images
       - nebulous-security-manager-container-images
       - nebulous-slo-violation-detector-container-images
@@ -101,8 +125,10 @@
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
         nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
+        nebulous-exn-middleware: ../exn-middleware/charts/nebulous-exn-middleware
         nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
+        nebulous-gui-controller: ../gui-controller/charts/nebulous-gui-controller
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
         # nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
         nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
@@ -110,7 +136,9 @@
         nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
         nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
         nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
+        nebulous-overlay-network-agent: ../overlay-network-agent/charts/nebulous-overlay-network-agent
         nebulous-overlay-network-manager: ../overlay-network-manager/charts/nebulous-overlay-network-manager
+        nebulous-prediction-orchestrator: ../prediction-orchestrator/charts/nebulous-prediction-orchestrator
         nebulous-resource-manager: ../resource-manager/charts/nebulous-resource-manager
         nebulous-security-manager: ../security-manager/charts/nebulous-security-manager
         nebulous-slo-violation-detector: ../slo-violation-detector/charts/nebulous-slo-violation-detector
