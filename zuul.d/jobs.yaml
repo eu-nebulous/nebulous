@@ -104,7 +104,7 @@
         nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
-        nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
+        # nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
         nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
         nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
