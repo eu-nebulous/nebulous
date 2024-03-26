@@ -124,21 +124,22 @@
     vars:
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
-        nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
+        # nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
         nebulous-exn-middleware: ../exn-middleware/charts/nebulous-exn-middleware
-        nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
+        # nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
         nebulous-gui-controller: ../gui-controller/charts/nebulous-gui-controller
         nebulous-influxdb: ../influxdb/charts/nebulous-influxdb
+        # nebulous-monitoring: ../monitoring/charts/nebulous-monitoring
         # nebulous-monitoring-data-persistor: ../monitoring-data-persistor/charts/nebulous-monitoring-data-persistor
-        nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
+        # nebulous-optimiser-constraint-checker: ../optimiser-constraint-checker/charts/nebulous-optimiser-constraint-checker
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
-        nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
+        # nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
         nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
-        nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
-        nebulous-overlay-network-agent: ../overlay-network-agent/charts/nebulous-overlay-network-agent
+        # nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
+        # nebulous-overlay-network-agent: ../overlay-network-agent/charts/nebulous-overlay-network-agent
         nebulous-overlay-network-manager: ../overlay-network-manager/charts/nebulous-overlay-network-manager
         nebulous-prediction-orchestrator: ../prediction-orchestrator/charts/nebulous-prediction-orchestrator
         nebulous-resource-manager: ../resource-manager/charts/nebulous-resource-manager
-        nebulous-security-manager: ../security-manager/charts/nebulous-security-manager
+        # nebulous-security-manager: ../security-manager/charts/nebulous-security-manager
         nebulous-slo-violation-detector: ../slo-violation-detector/charts/nebulous-slo-violation-detector
