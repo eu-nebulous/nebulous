@@ -5,6 +5,7 @@
 - nebulous/gui
 - nebulous/gui-controller
 - nebulous/influxdb
+- nebulous/monitoring
 - nebulous/monitoring-data-persistor
 - nebulous/optimiser-constraint-checker
 - nebulous/optimiser-controller
