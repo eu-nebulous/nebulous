@@ -130,7 +130,7 @@
     vars:
       helm_charts:
         nebulous-activemq: ../activemq/charts/nebulous-activemq
-        # nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
+        nebulous-cloud-fog-service-broker: ../cloud-fog-service-broker/charts/nebulous-cloud-fog-service-broker
         nebulous-exn-middleware: ../exn-middleware/charts/nebulous-exn-middleware
         # nebulous-exponential-smoothing-predictor: ../exponential-smoothing-predictor/charts/nebulous-exponential-smoothing-predictor
         nebulous-gui: ../gui/charts/nebulous-gui
