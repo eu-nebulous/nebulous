@@ -9,3 +9,7 @@
         - opendev-buildset-registry
         - nebulous-platform-apply-helm-charts
         - nox-linters
+    periodic:
+      jobs:
+        - opendev-buildset-registry
+        - nebulous-platform-apply-helm-charts
