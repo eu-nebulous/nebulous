@@ -142,7 +142,7 @@
         nebulous-optimiser-controller: ../optimiser-controller/charts/nebulous-optimiser-controller
         # nebulous-optimiser-resource-auction-agent: ../optimiser-resource-auction-agent/charts/nebulous-optimiser-resource-auction-agent
         nebulous-optimiser-solver: ../optimiser-solver/charts/nebulous-optimiser-solver
-        # nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
+        nebulous-optimiser-utility-evaluator: ../optimiser-utility-evaluator/charts/nebulous-optimiser-utility-evaluator
         # nebulous-overlay-network-agent: ../overlay-network-agent/charts/nebulous-overlay-network-agent
         nebulous-overlay-network-manager: ../overlay-network-manager/charts/nebulous-overlay-network-manager
         nebulous-prediction-orchestrator: ../prediction-orchestrator/charts/nebulous-prediction-orchestrator
