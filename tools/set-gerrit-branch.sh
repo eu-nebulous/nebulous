@@ -5,10 +5,8 @@ set -u
 
 BRANCH=$1
 
-cd ..
-
-for project in *; do
-    if [[ $project == "nebulous" ]]; then
+for project in ../*; do
+    if [[ $project == "../nebulous" ]]; then
         continue
     fi
     cd $project
